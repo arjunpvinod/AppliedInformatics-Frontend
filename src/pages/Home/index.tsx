@@ -11,6 +11,8 @@ import timeLineData from '../../components/TimelineComponent/constants';
 import { introText1, introText2 } from '../../components/IntroComponent/constants';
 import browseData from '../../components/BrowseComponent/constants';
 import EnquiryComponent from '../../components/EnquiryComponent';
+import BottomComponent from '../../components/BottomComponent';
+import FooterComponent from '../../components/FooterComponent';
 
 export default function Home() {
   return (
@@ -55,6 +57,8 @@ export default function Home() {
         </div>
       </div>
       <EnquiryComponent />
+      <BottomComponent />
+      <FooterComponent />
     </>
   );
 }
