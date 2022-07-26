@@ -1,24 +1,29 @@
-const questionsAnswers = [
+const accordionData = [
   {
-    question: 'How many team members can I invite?',
-    answer: 'You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.',
+    title: 'What do I have to do in the study?',
+    content: 'Participate in various study activities, such as screening visit, eligibility review, and a treatment period, over the course of about 3 months. This includes a 6 week treatment period where participants apply the study treatment 2x per day, send weekly photos of their lower legs and have a weekly video visit with a study coach. The study will conclude with an in-home visit when you end treatment and a video follow-up visit 4 weeks later. We will provide all instructionsand devices needed to participate in tha study',
   },
   {
-    question: 'What is the maximum file upload size?',
-    answer: 'No more than 2GB. All files in your account must fit your allotted storage space.',
+    title: 'How long is the study?',
+    content: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia veniam
+      reprehenderit nam assumenda voluptatem ut. Ipsum eius dicta, officiis
+      quaerat iure quos dolorum accusantium ducimus in illum vero commodi
+      pariatur? Impedit autem esse nostrum quasi, fugiat a aut error cumque
+      quidem maiores doloremque est numquam praesentium eos voluptatem amet!
+      Repudiandae, mollitia id reprehenderit a ab odit!`,
   },
   {
-    question: 'How do I reset my password?',
-    answer: 'Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.',
+    title: 'Can I continue to wear compression socks during the study?',
+    content: `Sapiente expedita hic obcaecati, laboriosam similique omnis architecto ducimus magnam accusantium corrupti
+      quam sint dolore pariatur perspiciatis, necessitatibus rem vel dignissimos
+      dolor ut sequi minus iste? Quas?`,
   },
   {
-    question: 'Can I cancel my subscription?',
-    answer: 'Yes! Send us a message and we’ll process your request no questions asked.',
-  },
-  {
-    question: 'Do you provide additional support?',
-    answer: 'Chat and email support is available 24/7. Phone lines are open during normal business hours.',
+    title: 'What is an at-home clinical study?',
+    content: `Sapiente expedita hic obcaecati, laboriosam similique omnis architecto ducimus magnam accusantium corrupti
+      quam sint dolore pariatur perspiciatis, necessitatibus rem vel dignissimos
+      dolor ut sequi minus iste? Quas?`,
   },
 ];
 
-export default questionsAnswers;
+export default accordionData;

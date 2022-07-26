@@ -1,41 +1,24 @@
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React, { useRef, useState } from 'react';
+import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
+import { AccordionProps } from './types';
 
-interface AccordionProps {
-  title: React.ReactNode
-  content: React.ReactNode
-}
-
-export default function Accordion({ title, content }: AccordionProps) {
-  const [active, setActive] = useState(false);
-  const [height, setHeight] = useState('0px');
-
-  const contentSpace = useRef(null);
-
-  function toggleAccordion() {
-    setActive((prevState) => !prevState);
-    // @ts-ignore
-    setHeight(active ? '0px' : `${contentSpace.current.scrollHeight}px`);
-  }
+export default function AccordionComponent({ title, content }: AccordionProps) {
+  const [isActive, setIsActive] = useState(false);
 
   return (
     <div className="flex flex-col">
-      <button
-        type="button"
-        className="py-6 box-border appearance-none cursor-pointer focus:outline-none flex items-center justify-between"
-        onClick={toggleAccordion}
-      >
-        <p className="inline-block text-footnote light">{title}</p>
-        <FontAwesomeIcon icon={faChevronDown} />
-      </button>
-      <div
-        ref={contentSpace}
-        style={{ maxHeight: `${height}` }}
-        className="overflow-auto transition-max-height duration-700 ease-in-out"
-      >
-        <div className="pb-10">{content}</div>
+      <div className="flex flex-row m-1 justify-between w-full py-4 px-4 border-b border-slate-200" onClick={() => setIsActive(!isActive)}>
+        <div className="text-sm font-semibold">{title}</div>
+        <div className="text-sm text-primary">
+          {isActive
+            ? <FontAwesomeIcon icon={faChevronUp} />
+            : <FontAwesomeIcon icon={faChevronDown} />}
+        </div>
       </div>
+      {isActive && <div className="text-xs py-2 px-4">{content}</div>}
     </div>
   );
 }

@@ -9,6 +9,7 @@ import BrowseComponent from '../../components/BrowseComponent';
 import TimelineComponent from '../../components/TimelineComponent';
 import timeLineData from '../../components/TimelineComponent/constants';
 import { introText1, introText2 } from '../../components/IntroComponent/constants';
+import browseData from '../../components/BrowseComponent/constants';
 
 export default function Home() {
   return (
@@ -28,7 +29,15 @@ export default function Home() {
       </div>
       <QuestionComponent />
       <FaqComponent />
-      <BrowseComponent />
+      {browseData.map((browse) => (
+        <BrowseComponent
+          bgImg={browse.bgImg}
+          cardImg={browse.cardImg}
+          title={browse.title}
+          content={browse.content}
+          cardPosition={browse.cardPosition}
+        />
+      ))}
       <div className="bg-white h-96 w-screen">
         <div className="rounded overflow-hidden flex flex-col text-left mx-auto sm-m-auto max-w-xl bg-white my-14 px-auto py-6 px-4">
           <h3 className="text-xl font-semibold text-black mb-3 text-center"> Patient Journey</h3>
@@ -37,6 +46,7 @@ export default function Home() {
               position={timeline.position}
               title={timeline.title}
               content={timeline.content}
+              end={timeline.end}
             />
           ))}
         </div>

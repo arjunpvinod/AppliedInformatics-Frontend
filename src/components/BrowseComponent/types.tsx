@@ -3,4 +3,5 @@ export type BrowseProps = {
     cardImg: string;
     title: string;
     content: string;
+    cardPosition: string;
 }

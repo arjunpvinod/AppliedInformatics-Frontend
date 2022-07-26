@@ -17,6 +17,7 @@
     "@types/react": "^18.0.9",
     "@types/react-dom": "^18.0.5",
     "add": "^2.0.6",
+    "animate.css": "^4.1.1",
     "eslint": "^7.32.0 || ^8.2.0",
     "prettier": "^2.6.2",
     "react": "^18.1.0",
