@@ -4,6 +4,7 @@ import img3 from '../../images/img-3.jpg';
 
 const browseData = [
   {
+    id: '1',
     bgImg: './images/bg-1.jpg',
     cardImg: img1,
     title: 'Research Facility',
@@ -11,6 +12,7 @@ const browseData = [
     cardPosition: 'right',
   },
   {
+    id: '2',
     bgImg: './images/bg-3.jpg',
     cardImg: img2,
     title: 'Monthly Check-ups',
@@ -18,6 +20,7 @@ const browseData = [
     cardPosition: 'left',
   },
   {
+    id: '3',
     bgImg: './images/bg-4.jpg',
     cardImg: img3,
     title: 'In-home Checkups',

@@ -3,7 +3,7 @@ import { CardData } from './types';
 
 export default function CardComponent({ title, content }: CardData) {
   return (
-    <div className="bg-slate-100 h-28 w-80 px-6 py-4 rounded-sm ml-4 mt-4 overflow-hidden">
+    <div className="bg-slate-100 h-28 w-80 px-6 py-4 rounded-sm lg:ml-4 lg:mt-4 base:my-2 my-2 overflow-hidden">
       <div className="font-semibold text-base mb-2 text-left">
         {title}
       </div>

@@ -1,3 +1,9 @@
 .highlights{
     height: 510px;
 }
+
+@media screen and (max-width: 700px) {
+    .highlights{
+        height: auto;
+    }
+}

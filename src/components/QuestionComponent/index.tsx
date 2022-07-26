@@ -4,7 +4,7 @@ import React from 'react';
 
 export default function QuestionComponent() {
   return (
-    <div className="bg-white h-96 w-screen">
+    <div className="bg-white my-12 w-screen">
       <div className="rounded overflow-hidden flex text-left mx-auto sm-m-none max-w-xl bg-primary my-14 px-auto py-6 px-4">
         <div className="px-6 py-4">
           <div className="text-white text-lg font-bold mb-2 text-left">Let&apos;s find out if you are eligible for this study.</div>

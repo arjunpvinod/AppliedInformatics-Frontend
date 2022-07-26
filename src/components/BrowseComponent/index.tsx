@@ -11,7 +11,7 @@ export default function BrowseComponent({
   return (
     <div className="browse-component">
       <div className={`${mainClass}`}>
-        <div className={`my-28 lg:mx-40 flex ${cardPosition === 'right' ? 'flex-row' : 'flex-row-reverse'}`}>
+        <div className={`my-28 lg:mx-40 flex flex-col ${cardPosition === 'right' ? 'lg:flex-row' : 'lg:flex-row-reverse'}`}>
           <div className="mx-10 my-12">
             <div className="font-bold text-lg mb-2 text-left">{title}</div>
             <p className="text-black-100 text-sm text-base text-left">{content}</p>

@@ -11,7 +11,7 @@ export default function HighlightsComponent() {
         <p className="text-white text-xs">Here are some key highlights of our study</p>
         <div className="max-w-3xl flex flex-wrap mx-auto my-4 items-center justify-center">
           {cardData.map((card) => (
-            <CardComponent title={card.title} content={card.content} />
+            <CardComponent key={card.id} title={card.title} content={card.content} />
           ))}
         </div>
       </div>

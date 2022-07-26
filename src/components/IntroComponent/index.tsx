@@ -7,10 +7,10 @@ export default function IntroComponent({ styled, caption, paragraph }: IntroData
       <div className="px-6 py-4">
         <div className={` ${styled ? 'text-lg' : 'text-xl'} font-bold mb-2 text-left`}>{caption}</div>
         {paragraph.map((para) => (
-          <>
+          <div key={para}>
             <p className="text-black-100 text-sm text-base text-left">{para}</p>
             <br />
-          </>
+          </div>
         ))}
       </div>
     </div>
